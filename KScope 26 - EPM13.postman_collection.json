@@ -1,0 +1,183 @@
+{
+  "info": {
+    "_postman_id": "43b01ae0-0ac3-4bb6-bd90-f05c6151c955",
+    "name": "KScope 26 - EPM13",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "11291768"
+  },
+  "item": [
+    {
+      "name": "Get Job Definitions - Pass HardCoded",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://epm13-test-a641377.epm.us-phoenix-1.ocs.oraclecloud.com/HyperionPlanning/rest/v3/applications/EPBCS/jobdefinitions",
+          "protocol": "https",
+          "host": [
+            "epm13-test-a641377",
+            "epm",
+            "us-phoenix-1",
+            "ocs",
+            "oraclecloud",
+            "com"
+          ],
+          "path": [
+            "HyperionPlanning",
+            "rest",
+            "v3",
+            "applications",
+            "EPBCS",
+            "jobdefinitions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Categories - Pass Hardcoded",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://epm13-test-a641377.epm.us-phoenix-1.ocs.oraclecloud.com/interop/rest/v2/migration/categories/list",
+          "protocol": "https",
+          "host": [
+            "epm13-test-a641377",
+            "epm",
+            "us-phoenix-1",
+            "ocs",
+            "oraclecloud",
+            "com"
+          ],
+          "path": [
+            "interop",
+            "rest",
+            "v2",
+            "migration",
+            "categories",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Job Definitions - OAUTH 2.0",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://epm13-test-a641377.epm.us-phoenix-1.ocs.oraclecloud.com/HyperionPlanning/rest/v3/applications/EPBCS/jobdefinitions",
+          "protocol": "https",
+          "host": [
+            "epm13-test-a641377",
+            "epm",
+            "us-phoenix-1",
+            "ocs",
+            "oraclecloud",
+            "com"
+          ],
+          "path": [
+            "HyperionPlanning",
+            "rest",
+            "v3",
+            "applications",
+            "EPBCS",
+            "jobdefinitions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Categories - OAUTH 2.0",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://epm13-test-a641377.epm.us-phoenix-1.ocs.oraclecloud.com/interop/rest/v2/migration/categories/list",
+          "protocol": "https",
+          "host": [
+            "epm13-test-a641377",
+            "epm",
+            "us-phoenix-1",
+            "ocs",
+            "oraclecloud",
+            "com"
+          ],
+          "path": [
+            "interop",
+            "rest",
+            "v2",
+            "migration",
+            "categories",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "password",
+        "value": "hGn86Yn25Fb@",
+        "type": "string"
+      },
+      {
+        "key": "username",
+        "value": "dayalan.punniyamoorthy@rsmus.com",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "value": ""
+    },
+    {
+      "key": "BASE_URL",
+      "value": ""
+    },
+    {
+      "key": "bearer_token_07ph",
+      "secret": true
+    }
+  ]
+}
